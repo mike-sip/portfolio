@@ -1,364 +1,252 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Junior Full Stack Developer",
+    "name": "Mike SIP",
+    "label": "Développeur Full Stack Junior",
     "image": "/me_avatar.jpg",
-    "email": "john.doe@example.com",
-    "phone": "+1 555-555-5555",
-    "url": "https://johndoe.dev",
-    "summary": "Junior Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
+    "email": "mikesip@hotmail.fr",
+    "phone": "07 69 92 83 00",
+    "url": "https://mikesip.dev",
+    "summary": "Jeune diplômé en développement informatique, je suis passionné par la création d’applications et toujours curieux d’apprendre de nouvelles technologies. Ouvert aux opportunités partout en France, je cherche à développer mes compétences dans les domaines du développement logiciel, du web et du DevOps. Mon objectif : concevoir des solutions efficaces et évolutives tout en continuant à progresser et à relever de nouveaux défis.",
     "theme": "default",
     "location": {
       "address": "",
-      "postalCode": "10001",
-      "city": "Auckland",
-      "countryCode": "NZ",
-      "region": "New Zealand"
+      "postalCode": "36000",
+      "city": "Châteauroux",
+      "countryCode": "FR",
+      "region": "Centre-Val de Loire"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "john-doe",
-        "url": "https://linkedin.com/in/john-doe"
-      },
-      {
-        "network": "X",
-        "username": "john-doe",
-        "url": "https://x.com/john-doe"
+        "username": "mike-sip",
+        "url": "https://www.linkedin.com/in/mike-sip/"
       },
       {
         "network": "GitHub",
-        "username": "johndoe",
-        "url": "https://github.com/johndoe"
+        "username": "mike-sip",
+        "url": "https://github.com/mike-sip"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Startup",
-      "position": "Junior Web Developer",
-      "location_type": "On site",
-      "location": "Auckland, New Zealand",
-      "url": "https://techstartup.com",
-      "startDate": "2024-01-01",
-      "endDate": null,
-      "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
+      "name": "Thales LAS France",
+      "position": "Apprenti développeur Web et Logiciel",
+      "location_type": "Sur site",
+      "location": "Elancourt, France",
+      "url": "https://thalesgroup.com",
+      "startDate": "2022-10-03",
+      "endDate": "2024-12-20",
+      "summary": "Au sein de l'équipe Support Atelier Ingénierie, j'ai participé aux développements d'outils internes permettant d'automatiser et de simplifier diverses actions autour de sujets tels que l'administration, le monitoring et le reporting des moyens d'ingénieries.",
       "highlights": [
-        "Improved website performance by optimizing code"
+        "Développement d’outils internes pour automatiser l’administration et le monitoring des moyens d’ingénierie."
       ],
       "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
+        "Développer et maintenir des applications internes pour automatiser des processus d’ingénierie.",
+        "Concevoir et implémenter des interfaces utilisateur avec Angular et TypeScript.",
+        "Créer des APIs et des services backend avec FastAPI et Python.",
+        "Intégrer et déployer les outils via Docker dans l’environnement de l’équipe.",
+        "Participer aux réunions d’équipe et aux revues de code pour améliorer la qualité logicielle."
       ],
       "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
+        "Mise en place d’outils ayant réduit le temps nécessaire à certaines tâches d’administration et de monitoring.",
+        "Déploiement d’applications conteneurisées avec Docker, améliorant la fiabilité et la portabilité des outils internes.",
+        "Amélioration de la productivité de l’équipe grâce à l’automatisation de processus manuels."
       ],
       "skills": [
-        "React",
-        "Tailwind",
-        "GitHub"
-      ]
-    },
-    {
-      "name": "Innovative Solutions",
-      "position": "Junior Software Developer",
-      "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-06-01",
-      "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
-      "highlights": [
-        "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
-      ],
-      "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
-      ],
-      "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
-      ],
-      "skills": [
+        "Angular",
+        "FastAPI",
+        "TypeScript",
         "Python",
-        "Django",
-        "SQL",
-        "Git"
+        "SQLite",
+        "Docker"
       ]
     },
     {
-      "name": "Web Agency",
-      "position": "Intern Web Developer",
-      "location_type": "Remote",
-      "location": "Sydney, Australia",
-      "startDate": "2022-06-01",
-      "endDate": "2022-12-01",
-      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
+      "name": "Université d’Orléans",
+      "position": "Projet d'étude - Développeur PHP Symfony",
+      "location_type": "Sur site",
+      "location": "Orléans, France",
+      "url": "https://www.univ-orleans.fr/",
+      "startDate": "2022-04-01",
+      "endDate": "2022-06-30",
+      "summary": "Développement d’une application web permettant de générer les plaquettes de formations enseignées à l’Université d’Orléans dans une équipe de 2 personnes.",
       "highlights": [
-        "Completed several client projects successfully"
+        "Conception et développement d’une application web de gestion de plaquettes de formation.",
+        "Intégration de technologies modernes : Symfony, Bootstrap, SQLite.",
+        "Travail collaboratif en équipe réduite avec gestion de projet agile.",
+        "Déploiement d’une solution fonctionnelle en seulement 3 mois."
       ],
-      "skills": [
-        "HTML",
-        "CSS"
-      ]
+      "responsibilities": [
+        "Développer une application web en Symfony pour générer automatiquement les plaquettes de formation.",
+        "Mettre en place la base de données avec SQLite et assurer les interactions côté backend.",
+        "Intégrer le frontend avec HTML, CSS, Bootstrap et JavaScript.",
+        "Collaborer avec un autre étudiant pour planifier, répartir et réaliser les tâches du projet.",
+        "Documenter et présenter le projet à l’équipe pédagogique."
+      ],
+      "achievements": [
+        "Livraison d’une application fonctionnelle en moins de 3 mois dans un contexte académique.",
+        "Mise en place d’une architecture modulaire facilitant les futures évolutions.",
+        "Projet reconnu par l’équipe pédagogique pour la qualité du code et la pertinence de la solution."
+      ],
+      "skills": ["Symfony", "HTML", "CSS", "JavaScript", "Bootstrap", "SQLite"]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Local Coding Club",
-      "position": "Volunteer",
-      "url": "https://codingclub.com/",
-      "startDate": "2021-01-01",
-      "endDate": "2022-01-01",
-      "summary": "Helped organize coding workshops and mentored new members.",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }
-  ],
+
   "education": [
     {
-      "institution": "State University",
-      "url": "https://stateuniversity.edu",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-01",
-      "score": "3.8",
-      "courses": [
-        "CS101 - Introduction to Computer Science",
-        "CS102 - Data Structures"
-      ]
+      "institution": "ETNA, Ivry-sur-Seine",
+      "url": "https://etna.io",
+      "area": "Architecture logicielle et Développement d'application",
+      "studyType": "Master of Science",
+      "startDate": "2022-10-01",
+      "endDate": "2024-12-20"
     },
     {
-      "institution": "Tech Institute",
-      "url": "https://techinstitute.edu",
-      "area": "Software Engineering",
-      "studyType": "Master",
-      "startDate": "2020-09-01",
-      "endDate": "2022-12-01",
-      "score": "3.9",
-      "courses": [
-        "SE201 - Advanced Software Development",
-        "SE202 - Software Architecture and Design"
-      ]
+      "institution": "Université d’Orléans",
+      "url": "https://www.univ-orleans.fr/",
+      "area": "Informatique",
+      "studyType": "Licence Ingénierie Informatique",
+      "startDate": "2021-09-01",
+      "endDate": "2022-06-30"
     },
     {
-      "institution": "City College",
-      "url": "https://citycollege.edu",
-      "area": "Information Technology",
-      "studyType": "Associate Degree",
-      "startDate": "2017-01-01",
-      "endDate": "2019-12-01",
-      "score": "3.7",
-      "courses": [
-        "IT101 - Networking Fundamentals",
-        "IT102 - Database Management Systems"
-      ]
+      "institution": "IUT d’Orléans",
+      "url": "https://www.univ-orleans.fr/fr/iut-orleans",
+      "area": "Informatique",
+      "studyType": "DUT Informatique",
+      "startDate": "2019-09-01",
+      "endDate": "2021-06-30"
+    },
+    {
+      "institution": "Lycée Pierre et Marie Curie, Châteauroux",
+      "url": "https://www.lyceepmc.fr/",
+      "area": "Baccalauréat Scientifique, spécialité Informatique et Sciences du Numérique",
+      "studyType": "Baccalauréat",
+      "startDate": "2016-09-01",
+      "endDate": "2019-06-30",
+      "score": "Mention Assez Bien"
     }
   ],
   "certificates": [
     {
-      "name": "Full Stack Web Development",
-      "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
+      "name": "Master of Science - Architecte logiciel, développeur d'application",
+      "date": "2024-12-20",
+      "issuer": "ETNA, Ivry-sur-Seine"
+    },
+    {
+      "name": "Licence Ingénierie Informatique",
+      "date": "2022-06-30",
+      "issuer": "Université d’Orléans"
+    },
+    {
+      "name": "DUT Informatique",
+      "date": "2021-06-30",
+      "issuer": "IUT d’Orléans"
+    },
+    {
+      "name": "Baccalauréat Scientifique, spécialité Informatique et Sciences du Numérique",
+      "date": "2019-06-30",
+      "issuer": "Lycée Pierre et Marie Curie, Châteauroux"
     }
   ],
   "skills": [
     {
-      "name": "Figma",
-      "level": "Expert",
-      "keywords": [
-        "Design",
-        "UI"
-      ]
+      "name": "Python",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Backend", "Data Science", "Scripting"]
     },
     {
-      "name": "Gitlab",
+      "name": "Java",
       "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
+      "keywords": ["Web Development", "Backend", "Java Framework", "APIs"]
+    },
+    {
+      "name": "PHP",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Backend", "Server-side"]
     },
     {
       "name": "HTML",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend"
-      ]
+      "keywords": ["Web Development", "Frontend"]
     },
     {
       "name": "CSS",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Responsive Design"
-      ]
+      "keywords": ["Web Development", "Frontend", "Responsive Design"]
     },
     {
       "name": "JavaScript",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
+      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
     },
     {
-      "name": "Tailwind",
+      "name": "Ansible",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
-      ]
+      "keywords": ["Automation", "DevOps", "Configuration Management"]
+    },
+      {
+      "name": "Kubernetes",
+      "level": "Intermediate",
+      "keywords": ["Container Orchestration", "DevOps", "Microservices"]
     },
     {
-      "name": "TypeScript",
+      "name": "Docker",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
+      "keywords": ["Containerization", "DevOps", "CI/CD"]
     },
     {
-      "name": "Node",
+      "name": "MySQL/MariaDB",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "JavaScript",
-        "Server"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
-      "name": "MySQL",
-      "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "name": "NoSQL",
+      "level": "Beginner",
+      "keywords": ["Databases", "NoSQL", "Data Storage", "Backend"]
     },
     {
-      "name": "Git",
+      "name": "Gitlab",
       "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
+      "keywords": ["Version Control", "Collaboration", "Source Code"]
     },
     {
       "name": "GitHub",
       "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Beginner",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
     }
   ],
   "languages": [
     {
-      "language": "English",
-      "fluency": "Native speaker"
+      "language": "Anglais",
+      "fluency": "Intermédiaire"
     },
     {
-      "language": "Spanish",
-      "fluency": "Intermediate"
+      "language": "Espagnol",
+      "fluency": "Débutant"
     }
   ],
   "interests": [
     {
-      "name": "Technology",
-      "keywords": [
-        "AI",
-        "Blockchain"
-      ]
-    }
-  ],
-  "references": [
+      "name": "Nouvelles technologies",
+      "keywords": ["Veille technologique", "Innovation", "Gadgets"]
+    },
     {
-      "name": "Jane Smith",
-      "reference": "Reference…"
+      "name": "Jeux vidéo",
+      "keywords": ["Gaming", "Esports", "Streaming"]
+    },
+    {
+      "name": "Sports",
+      "keywords": ["Handball", "Musculation"]
     }
   ],
   "projects": [
     {
-      "name": "Personal Portfolio",
+      "name": "À venir",
       "isActive": false,
-      "description": "A personal portfolio website to showcase my projects and skills.",
-      "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
-      ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Weather App",
-      "isActive": true,
-      "description": "A web application that provides weather information for any location.",
-      "highlights": [
-        "Built with JavaScript and OpenWeatherMap API",
-        "Responsive design"
-      ],
-      "url": "https://weatherapp.com"
-    },
-    {
-      "name": "Task Manager",
-      "isActive": true,
-      "description": "A simple task management app to keep track of daily tasks.",
-      "highlights": [
-        "Built with Node.js and MongoDB",
-        "User authentication and CRUD operations"
-      ],
-      "url": "https://taskmanager.com",
-      "github": "https://github.com"
-    },
-    {
-      "name": "E-commerce Site",
-      "isActive": false,
-      "description": "An online store built with Next.js and Stripe for payment processing.",
-      "highlights": [
-        "Product management and shopping cart functionality",
-        "Secure payment integration"
-      ],
-      "url": "https://ecommerce.com"
+      "description": "Développement en cours...",
+      "highlights": ["Des projets personnels seront bientôt disponibles ici."]
     }
   ]
 }
