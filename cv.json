@@ -132,22 +132,26 @@
     {
       "name": "Master of Science - Architecte logiciel, développeur d'application",
       "date": "2024-12-20",
-      "issuer": "ETNA, Ivry-sur-Seine"
+      "issuer": "ETNA, Ivry-sur-Seine",
+      "url": ""
     },
     {
       "name": "Licence Ingénierie Informatique",
       "date": "2022-06-30",
-      "issuer": "Université d’Orléans"
+      "issuer": "Université d’Orléans",
+      "url": ""
     },
     {
       "name": "DUT Informatique",
       "date": "2021-06-30",
-      "issuer": "IUT d’Orléans"
+      "issuer": "IUT d’Orléans",
+      "url": ""
     },
     {
       "name": "Baccalauréat Scientifique, spécialité Informatique et Sciences du Numérique",
       "date": "2019-06-30",
-      "issuer": "Lycée Pierre et Marie Curie, Châteauroux"
+      "issuer": "Lycée Pierre et Marie Curie, Châteauroux",
+      "url": ""
     }
   ],
   "skills": [
@@ -246,7 +250,9 @@
       "name": "À venir",
       "isActive": false,
       "description": "Développement en cours...",
-      "highlights": ["Des projets personnels seront bientôt disponibles ici."]
+      "highlights": ["Des projets personnels seront bientôt disponibles ici."],
+      "url": "",
+      "github": ""
     }
   ]
 }
