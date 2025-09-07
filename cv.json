@@ -132,26 +132,22 @@
     {
       "name": "Master of Science - Architecte logiciel, développeur d'application",
       "date": "2024-12-20",
-      "issuer": "ETNA, Ivry-sur-Seine",
-      "url": ""
+      "issuer": "ETNA, Ivry-sur-Seine"
     },
     {
       "name": "Licence Ingénierie Informatique",
       "date": "2022-06-30",
-      "issuer": "Université d’Orléans",
-      "url": ""
+      "issuer": "Université d’Orléans"
     },
     {
       "name": "DUT Informatique",
       "date": "2021-06-30",
-      "issuer": "IUT d’Orléans",
-      "url": ""
+      "issuer": "IUT d’Orléans"
     },
     {
       "name": "Baccalauréat Scientifique, spécialité Informatique et Sciences du Numérique",
       "date": "2019-06-30",
-      "issuer": "Lycée Pierre et Marie Curie, Châteauroux",
-      "url": ""
+      "issuer": "Lycée Pierre et Marie Curie, Châteauroux"
     }
   ],
   "skills": [
@@ -190,7 +186,7 @@
       "level": "Intermediate",
       "keywords": ["Automation", "DevOps", "Configuration Management"]
     },
-      {
+    {
       "name": "Kubernetes",
       "level": "Intermediate",
       "keywords": ["Container Orchestration", "DevOps", "Microservices"]
@@ -247,12 +243,18 @@
   ],
   "projects": [
     {
-      "name": "À venir",
+      "name": "TaskFlow (En cours de développement)",
       "isActive": false,
-      "description": "Développement en cours...",
-      "highlights": ["Des projets personnels seront bientôt disponibles ici."],
-      "url": "",
-      "github": ""
+      "description": "Application web de gestion de projets collaboratifs et de suivi de tâches en temps réel, développée avec Angular et Spring Boot.",
+      "highlights": [
+        "Inscription et authentification sécurisée (JWT, Spring Security)",
+        "Création et gestion de projets",
+        "Attribution et suivi des tâches",
+        "Collaboration avec invitations de membres",
+        "Notifications et mise à jour en temps réel (WebSocket)"
+      ],
+      "url": "https://taskflow-demo.example.com",
+      "github": "https://github.com/mike-sip/taskflow"
     }
   ]
 }
