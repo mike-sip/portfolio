@@ -255,6 +255,16 @@
       ],
       "url": "https://taskflow-demo.example.com",
       "github": "https://github.com/mike-sip/taskflow"
+    },
+    {
+      "name": "Sandbox",
+      "isActive": false,
+      "description": "Dépôt de projets d'apprentissage et d'expérimentation couvrant divers langages et technologies.",
+      "highlights": [
+        "Django"
+      ],
+      "url": "https://sandbox.example.com",
+      "github": "https://github.com/mike-sip/sandbox"
     }
   ]
 }
