@@ -261,7 +261,8 @@
       "isActive": false,
       "description": "Dépôt de projets d'apprentissage et d'expérimentation couvrant divers langages et technologies.",
       "highlights": [
-        "Django"
+        "Django",
+        "Django REST Framework"
       ],
       "url": "https://sandbox.example.com",
       "github": "https://github.com/mike-sip/sandbox"
