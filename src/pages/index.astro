@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Levels from '../components/Levels.astro';
+import Inventory from '../components/Inventory.astro';
+import Quests from '../components/Quests.astro';
+import Offline from '../components/Offline.astro';
+import Footer from '../components/Footer.astro';
+import { profile } from '../data/profile';
+---
+
+<Base
+  title={`${profile.name} · ${profile.role}`}
+  description={`${profile.name}, ${profile.role} à ${profile.location}. ${profile.tagline}`}
+>
+  <main id="main">
+    <Hero />
+    <Levels />
+    <Inventory />
+    <Quests />
+    <Offline />
+  </main>
+  <Footer />
+</Base>

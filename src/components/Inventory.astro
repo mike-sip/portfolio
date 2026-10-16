@@ -1,0 +1,62 @@
+---
+import { inventory } from '../data/profile';
+
+const colors: Record<string, string> = {
+  Langage: 'yellow',
+  Backend: 'red',
+  DevOps: 'blue',
+  Frontend: 'green',
+  Données: 'pink',
+};
+---
+
+<section id="inventaire" class="section band" aria-labelledby="inventaire-title">
+  <div class="wrap">
+    <h2 id="inventaire-title" class="section-title">Inventaire <span class="tag bg-blue">Stack</span></h2>
+    <ul>
+      {
+        inventory.map((item) => (
+          <li class="box lift">
+            <span class="name">{item.name}</span>
+            <span class={`tag bg-${colors[item.kind] ?? 'pink'}`}>{item.kind}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .band {
+    margin-block: 2rem;
+    background: var(--ink);
+    color: var(--paper);
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    min-height: 8rem;
+    padding: 1rem;
+    color: var(--ink);
+    box-shadow: 0.375rem 0.375rem 0 var(--yellow);
+  }
+  li:hover {
+    box-shadow: 0.625rem 0.625rem 0 var(--yellow);
+  }
+  .name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+</style>

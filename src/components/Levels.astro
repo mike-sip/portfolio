@@ -1,0 +1,104 @@
+---
+import { levels } from '../data/profile';
+
+const colors = ['yellow', 'green', 'blue', 'pink', 'red'];
+---
+
+<section id="niveaux" class="wrap section" aria-labelledby="niveaux-title">
+  <h2 id="niveaux-title" class="section-title">Niveaux débloqués <span class="tag bg-yellow">Parcours</span></h2>
+  <ol>
+    {
+      levels.map((l, i) => (
+        <li class:list={['box lift', { current: l.current }]}>
+          <span class={`lvl bg-${colors[i % colors.length]}`}>
+            LVL <strong>{i + 1}</strong>
+          </span>
+          <div>
+            <h3>{l.title}</h3>
+            <p class="place">{l.place} · {l.date}</p>
+            <p>{l.text}</p>
+          </div>
+          {l.current && <span class="tag bg-green now">En cours</span>}
+        </li>
+      ))
+    }
+  </ol>
+</section>
+
+<style>
+  ol {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: none;
+  }
+  @media (min-width: 48rem) {
+    ol {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    li:nth-child(odd) {
+      transform: rotate(-0.75deg);
+    }
+    li:nth-child(even) {
+      transform: rotate(0.75deg) translateY(1.5rem);
+    }
+  }
+  @media (min-width: 62rem) {
+    ol {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    li:nth-child(even) {
+      transform: rotate(0.75deg);
+    }
+  }
+  li {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+  li.lift:hover {
+    transform: translate(-0.25rem, -0.25rem);
+  }
+  li.current {
+    background: var(--ink);
+    color: var(--paper);
+    box-shadow: 0.375rem 0.375rem 0 var(--red);
+  }
+  .lvl {
+    flex-shrink: 0;
+    display: grid;
+    place-content: center;
+    width: 4rem;
+    height: 4rem;
+    border: var(--border);
+    border-radius: var(--radius);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+  }
+  .lvl strong {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .place {
+    margin-block: 0.25rem 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+  .now {
+    position: absolute;
+    top: -0.875rem;
+    right: 1rem;
+    color: var(--ink);
+  }
+</style>
