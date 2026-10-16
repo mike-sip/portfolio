@@ -1,0 +1,49 @@
+---
+import { offline } from '../data/profile';
+
+const colors = ['pink', 'blue', 'green', 'yellow'];
+---
+
+<section id="hors-ligne" class="wrap section" aria-labelledby="hors-ligne-title">
+  <h2 id="hors-ligne-title" class="section-title">Mode hors-ligne <span class="tag bg-pink">Hobbies</span></h2>
+  <ul>
+    {
+      offline.map((h, i) => (
+        <li class={`box lift bg-${colors[i % colors.length]}`}>
+          <span class="emoji" aria-hidden="true">{h.emoji}</span>
+          <h3>{h.name}</h3>
+          <p>{h.text}</p>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  ul {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  @media (min-width: 48rem) {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  li {
+    padding: 1.5rem;
+  }
+  .emoji {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 3rem;
+    line-height: 1;
+  }
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
+</style>

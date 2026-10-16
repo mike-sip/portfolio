@@ -1,0 +1,284 @@
+---
+import { profile, stats } from '../data/profile';
+
+const nav = [
+  { href: '#niveaux', label: 'Niveaux' },
+  { href: '#inventaire', label: 'Inventaire' },
+  { href: '#quetes', label: 'Quêtes' },
+  { href: '#hors-ligne', label: 'Hors-ligne' },
+];
+const [first, last] = profile.name.split(' ');
+---
+
+<header class="wrap top">
+  <a class="logo box" href="#main" aria-label={`${profile.name}, retour en haut`}>MS</a>
+  <nav aria-label="Sections">
+    <ul>
+      {nav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+    </ul>
+  </nav>
+</header>
+
+<section class="wrap hero" aria-labelledby="hero-title">
+  <div class="intro">
+    <p class="tag bg-green">● Joueur 1 · {profile.location}</p>
+    <h1 id="hero-title">
+      <span class="first">{first}</span>
+      <span class="last">{last}<span class="star" aria-hidden="true">✦</span></span>
+    </h1>
+    <p class="role">{profile.role} {profile.company}.<br />Curieux de tout : full-stack, DevOps, infra.<br />En pleine montée en compétences sur le développement <strong>AI-native</strong>.</p>
+    <blockquote class="quote box bg-yellow">« {profile.tagline} »</blockquote>
+
+    <div class="term box" role="img" aria-label="Terminal : python3 hello.py affiche « Bonjour, moi c'est Mike ! »">
+      <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p aria-hidden="true"><span class="prompt">$</span> <span class="typed" style="--n: 18">python3 hello.py</span></p>
+      <p aria-hidden="true" class="out">Bonjour, moi c'est Mike !<span class="caret">▌</span></p>
+    </div>
+  </div>
+
+  <aside class="sheet box" aria-labelledby="sheet-title">
+    <div class="sheet-head bg-blue">
+      <h2 id="sheet-title">Fiche perso</h2>
+      <span class="tag">Classe : Backend</span>
+    </div>
+    <dl>
+      {
+        stats.map((s) => (
+          <div class="stat">
+            <dt>{s.label}</dt>
+            <dd>
+              <span class="bar" aria-hidden="true">
+                <span class={`fill bg-${s.color}`} style={`--v: ${s.value * 10}%`} />
+              </span>
+              <span class="num">{s.value}/10</span>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+    <a class="start bg-red" href={profile.github} rel="me">Press start · GitHub ↗</a>
+  </aside>
+</section>
+
+<style>
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1.5rem;
+  }
+  .logo {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--yellow);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0.25rem 0.25rem 0 var(--ink);
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.25rem 1.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav a {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  nav a:not(:hover) {
+    text-decoration-color: transparent;
+  }
+
+  .hero {
+    display: grid;
+    gap: 3rem;
+    padding-block: 2rem 4rem;
+  }
+  @media (min-width: 62rem) {
+    .hero {
+      grid-template-columns: 1.4fr 1fr;
+      align-items: center;
+    }
+  }
+
+  h1 {
+    margin-block: 1rem 1.5rem;
+    font-size: clamp(4rem, 17vw, 9rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 0.85;
+  }
+  h1 span {
+    display: block;
+  }
+  .last {
+    color: var(--paper);
+    -webkit-text-stroke: 3px var(--ink);
+    paint-order: stroke fill;
+    text-shadow: 0.375rem 0.375rem 0 var(--red);
+  }
+  .star {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.4em;
+    vertical-align: top;
+    color: var(--yellow);
+    animation: spin 6s linear infinite;
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .role {
+    max-width: 34rem;
+    font-size: 1.25rem;
+  }
+  .quote {
+    max-width: 34rem;
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transform: rotate(-1.5deg);
+  }
+
+  .term {
+    max-width: 34rem;
+    padding: 0 1rem 1rem;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--font-mono);
+    font-size: 0.9375rem;
+  }
+  .term-bar {
+    display: flex;
+    gap: 0.375rem;
+    padding-block: 0.75rem;
+  }
+  .term-bar i {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--red);
+  }
+  .term-bar i:nth-child(2) { background: var(--yellow); }
+  .term-bar i:nth-child(3) { background: var(--green); }
+  .prompt {
+    color: var(--green);
+  }
+  .typed {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: bottom;
+    width: calc(var(--n) * 1ch);
+    animation: type 1.2s steps(var(--n)) 0.4s both;
+  }
+  @keyframes type {
+    from {
+      width: 0;
+    }
+  }
+  .out {
+    color: var(--yellow);
+    animation: show 0s 1.8s both;
+  }
+  @keyframes show {
+    from {
+      visibility: hidden;
+    }
+  }
+  .caret {
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .sheet {
+    overflow: hidden;
+    transform: rotate(1.5deg);
+  }
+  .sheet-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+    border-bottom: var(--border);
+  }
+  .sheet-head h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
+  dl {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    padding: 1.25rem;
+  }
+  .stat dt {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .stat dd {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0.25rem 0 0;
+  }
+  .bar {
+    flex: 1;
+    height: 1.25rem;
+    border: 2px solid var(--ink);
+    border-radius: 0.25rem;
+    background: repeating-linear-gradient(90deg, transparent 0 calc(10% - 2px), rgb(20 20 20 / 0.15) 0 10%);
+  }
+  .fill {
+    display: block;
+    height: 100%;
+    width: var(--v);
+    border-right: 2px solid var(--ink);
+    animation: grow 1s cubic-bezier(0.3, 1.4, 0.5, 1) 0.6s both;
+  }
+  @keyframes grow {
+    from {
+      width: 0;
+    }
+  }
+  .num {
+    min-width: 3.5ch;
+    font-family: var(--font-mono);
+    font-weight: 700;
+  }
+  .start {
+    display: block;
+    padding: 1rem;
+    border-top: var(--border);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .start:hover {
+    background: var(--yellow);
+  }
+</style>
