@@ -39,6 +39,7 @@ export const inventory = [
   { name: 'Kubernetes', kind: 'DevOps' },
   { name: 'Angular', kind: 'Frontend' },
   { name: 'TypeScript', kind: 'Langage' },
+  { name: 'Dev AI-native', kind: 'IA · en cours' },
 ];
 
 export const quests = [
