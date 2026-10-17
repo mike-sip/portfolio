@@ -5,7 +5,7 @@ export const profile = {
   location: 'Sèvres (92)',
   tagline: "S’amuser est l’art de rester jeune dans un monde qui oublie de l’être.",
   role: 'Développeur backend Python / Django',
-  company: 'dans une entreprise de cybersécurité',
+  company: 'chez Patrowl, plateforme de cybersécurité offensive',
   github: 'https://github.com/mike-sip',
   linkedin: 'https://www.linkedin.com/in/mike-sip/',
 };
@@ -25,7 +25,7 @@ export const levels = [
   { title: 'Licence Informatique, parcours Ingénierie', place: "Université d'Orléans", date: '2021 – 2022', text: 'Monter en abstraction et en rigueur.' },
   { title: 'Master Architecte logiciel', place: 'ETNA, Ivry-sur-Seine · alternance', date: '2022 – 2024', text: "Concevoir des applications, pas seulement les coder." },
   { title: 'Développeur logiciel et web', place: 'Thales, Élancourt · alternance', date: '2022 – 2024', text: "Outils internes en Angular et FastAPI, conteneurisés avec Docker. 30 à 40 % de temps gagné sur des tâches d'administration et de monitoring grâce à l'automatisation." },
-  { title: 'Développeur back-end Python', place: 'Cybersécurité, Paris', date: 'Depuis 2026', text: 'APIs Django, tâches Celery et PostgreSQL au quotidien.', current: true },
+  { title: 'Développeur back-end Python', place: 'Patrowl, Paris', date: 'Depuis 2026', text: 'APIs Django, tâches Celery et PostgreSQL au quotidien.', current: true },
 ];
 
 export const inventory = [
