@@ -52,11 +52,11 @@ export const quests = [
     color: 'red',
   },
   {
-    name: 'La Carto Poulet',
-    pitch: 'Une app mobile qui cartographie tous les restaurants qui servent les meilleurs poulets.',
-    details: ['Carte des meilleures adresses', 'Pensée pour le mobile'],
-    stack: ['Mobile'],
-    status: 'En cours',
+    name: "La Carto'Poulet",
+    pitch: 'Une app iPhone qui recense les restos spécialisés dans le poulet en France, notés en pilons de 1 à 5.',
+    details: ['Carte des restos autour de soi, sans compte', 'Connexion par code email, sans mot de passe', 'Modération : signalement, masquage auto, blocage', 'Restos importés depuis OpenStreetMap'],
+    stack: ['SwiftUI', 'MapKit', 'Supabase', 'PostGIS'],
+    status: 'Testée sur iPhone',
     color: 'yellow',
   },
 ] as const;
